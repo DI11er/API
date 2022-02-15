@@ -22,7 +22,7 @@ namespace API
             services.AddScoped<CarInterface, CarRepository>();
             services.AddScoped<DriverInterface, DriverRepository>();
             services.AddScoped<FlightInterface, FlightRepository>();
-            services.AddScoped<LogDepartureInterface, LogDepartureRepository>();
+            //services.AddScoped<LogDepartureInterface, LogDepartureRepository>();
 
             services.AddDbContext<MainContext>(options => options.UseSqlServer(con));
 
